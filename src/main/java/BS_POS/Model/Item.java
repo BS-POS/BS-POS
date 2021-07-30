@@ -12,9 +12,18 @@ public class Item {
     private String name = "";
     private Double price = 0.0;
     private Integer itemCount = 0;
+    private Boolean inStock;
     @OneToMany
     private Set<Modifier> modifiers;
 
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -40,11 +49,19 @@ public class Item {
         this.itemCount = itemCount;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public Boolean getInStock() {
+        return inStock;
     }
 
-    public Long getId() {
-        return id;
+    public void setInStock(Boolean inStock) {
+        this.inStock = inStock;
+    }
+
+    public Set<Modifier> getModifiers() {
+        return modifiers;
+    }
+
+    public void setModifiers(Set<Modifier> modifiers) {
+        this.modifiers = modifiers;
     }
 }

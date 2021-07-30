@@ -14,6 +14,7 @@ public class Modifier {
     private String name;
     private Double price;
     private Integer quantity;
+    private Boolean inStock;
 
     public Long getId() {
         return id;
@@ -45,5 +46,13 @@ public class Modifier {
 
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
+    }
+
+    public Boolean getInStock() {
+        return inStock;
+    }
+
+    public void setInStock(Boolean inStock) {
+        this.inStock = inStock;
     }
 }
