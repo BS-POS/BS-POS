@@ -1,9 +1,7 @@
 package BS_POS.Model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Item {
@@ -14,6 +12,8 @@ public class Item {
     private String name = "";
     private Double price = 0.0;
     private Integer itemCount = 0;
+    @OneToMany
+    private Set<Modifier> modifiers;
 
 
     public String getName() {
