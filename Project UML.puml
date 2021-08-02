@@ -15,7 +15,7 @@ PaymentMethod
 LastFourCardDigits
 ItemLog
 Getters()
-Setters()
+Setters(Object objectName))
 }
 
 Class Item {
@@ -25,7 +25,7 @@ Price
 ItemCount
 InStock
 Getters()
-Setters()
+Setters(Object objectName)
 }
 
 Class Modifier {
@@ -35,7 +35,7 @@ Price
 Quantity
 InStock
 Getters()
-Setters()
+Setters(Object objectName))
 }
 
 
