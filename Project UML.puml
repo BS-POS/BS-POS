@@ -1,4 +1,8 @@
 @startuml
+!define DARKBLUE
+!include https://github.com/Drakemor/RedDress-PlantUML.git
+
+
 
 Class CustomerCheck {
 ID
@@ -10,6 +14,8 @@ CheckTotal
 PaymentMethod
 LastFourCardDigits
 ItemLog
+Getters()
+Setters(Object objectName))
 }
 
 Class Item {
@@ -18,11 +24,18 @@ ItemName
 Price
 ItemCount
 InStock
+Getters()
+Setters(Object objectName)
 }
 
 Class Modifier {
 ID
 ModifierName
+Price
+Quantity
+InStock
+Getters()
+Setters(Object objectName))
 }
 
 
