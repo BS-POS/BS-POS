@@ -11,7 +11,7 @@ public class Modifier {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String name;
+    private String modifierName;
     private Double price;
     private Integer quantity;
     private Boolean inStock;
@@ -25,11 +25,11 @@ public class Modifier {
     }
 
     public String getName() {
-        return name;
+        return modifierName;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.modifierName = name;
     }
 
     public Double getPrice() {

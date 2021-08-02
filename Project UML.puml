@@ -15,10 +15,15 @@ ItemLog
 Class Item {
 ID
 ItemName
-
+Price
+ItemCount
+InStock
 }
 
-Class Modifier {}
+Class Modifier {
+ID
+ModifierName
+}
 
 
 @enduml
