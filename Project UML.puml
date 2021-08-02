@@ -1,0 +1,24 @@
+@startuml
+
+Class CustomerCheck {
+ID
+ServerName
+CheckName
+TimeStamp
+TableNumber
+CheckTotal
+PaymentMethod
+LastFourCardDigits
+ItemLog
+}
+
+Class Item {
+ID
+ItemName
+
+}
+
+Class Modifier {}
+
+
+@enduml

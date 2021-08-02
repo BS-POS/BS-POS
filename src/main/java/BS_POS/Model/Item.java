@@ -9,7 +9,7 @@ public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String name = "";
+    private String itemName = "";
     private Double price = 0.0;
     private Integer itemCount = 0;
     private Boolean inStock;
@@ -26,11 +26,11 @@ public class Item {
     }
 
     public String getName() {
-        return name;
+        return itemName;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.itemName = name;
     }
 
     public Double getPrice() {
