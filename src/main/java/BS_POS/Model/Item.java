@@ -16,6 +16,8 @@ public class Item {
     @OneToMany
     private Set<Modifier> modifiers;
 
+    public Item() {
+    }
 
     public Long getId() {
         return id;
