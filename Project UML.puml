@@ -38,5 +38,12 @@ Getters()
 Setters(Object objectName))
 }
 
+note "ArrayList 'ItemLog' collects number of total items on CustomerCheck" as N1
+CustomerCheck ..N1
+N1.. Item
+
+note "ArrayList 'ItemCount' collects number of specific item" as N2
+Item ..N2
+N2.. Modifier
 
 @enduml
