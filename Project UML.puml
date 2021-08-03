@@ -46,4 +46,17 @@ note "ArrayList 'ItemCount' collects number of specific item" as N2
 Item ..N2
 N2.. Modifier
 
+
+Interface CustomerCheckRepository {}
+Interface ItemRepository {}
+Interface ModifierRepository {}
+
+Class CustomerCheckController {}
+Class ItemController {}
+Class ModifierController {}
+
+Class CustomerCheckService {}
+Class ItemService {}
+Class ModifierService {}
+
 @enduml
