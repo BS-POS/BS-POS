@@ -16,6 +16,9 @@ public class Modifier {
     private Integer quantity;
     private Boolean inStock;
 
+    public Modifier() {
+    }
+
     public Long getId() {
         return id;
     }

@@ -20,6 +20,9 @@ public class CustomerCheck {
     @OneToMany
     private Set<Item> itemLog;
 
+    public CustomerCheck() {
+    }
+
     public Long getId() {
         return id;
     }
