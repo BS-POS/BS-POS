@@ -26,4 +26,9 @@ public class CustomerCheckService {
         return customerCheckRepository.save(newCheck);
     }
 
+    public Boolean deleteCustomerCheck (CustomerCheck customerCheck) {
+        customerCheckRepository.delete(customerCheck);
+        return true;
+    }
+
 }
