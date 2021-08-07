@@ -15,6 +15,20 @@ public class ItemService {
         this.itemRepository = itemRepository;
     }
 
+    public Iterable<Item> indexItems(){
+        return itemRepository.findAll();
+    }
 
+    public Item showItem(Long id){
+        return itemRepository.findById(id).get();
+    }
+    public Item createItem(Item newItem) {
+        return itemRepository.save(newItem);
+    }
+
+    public Boolean deleteItem (Item item) {
+        itemRepository.delete(item);
+        return true;
+    }
 
 }
