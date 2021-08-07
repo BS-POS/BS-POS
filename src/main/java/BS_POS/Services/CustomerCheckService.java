@@ -18,11 +18,11 @@ public class CustomerCheckService {
         return customerCheckRepository.findAll();
     }
 
-    public CustomerCheck showCustomerCheck(Long id){
+    public CustomerCheck showCustomerCheck(Long id) {
         return customerCheckRepository.findById(id).get();
     }
 
-    public CustomerCheck createCustomerCheck(CustomerCheck newCheck){
+    public CustomerCheck createCustomerCheck(CustomerCheck newCheck) {
         return customerCheckRepository.save(newCheck);
     }
 

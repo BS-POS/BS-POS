@@ -15,19 +15,19 @@ public class ModifierService {
         this.modifierRepository = modifierRepository;
     }
 
-    public Iterable<Modifier> IndexAllModifiers(){
+    public Iterable<Modifier> IndexAllModifiers() {
         return modifierRepository.findAll();
     }
 
-    public Modifier showModifier(Long id){
+    public Modifier showModifier(Long id) {
         return modifierRepository.findById(id).get();
     }
 
-    public Modifier createModifier(Modifier newModifier){
+    public Modifier createModifier(Modifier newModifier) {
         return modifierRepository.save(newModifier);
     }
 
-    public Boolean deleteModifier(Modifier modifier){
+    public Boolean deleteModifier(Modifier modifier) {
         modifierRepository.delete(modifier);
         return true;
     }

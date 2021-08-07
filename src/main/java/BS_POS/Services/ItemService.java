@@ -15,11 +15,11 @@ public class ItemService {
         this.itemRepository = itemRepository;
     }
 
-    public Iterable<Item> indexItems(){
+    public Iterable<Item> indexItems() {
         return itemRepository.findAll();
     }
 
-    public Item showItem(Long id){
+    public Item showItem(Long id) {
         return itemRepository.findById(id).get();
     }
     public Item createItem(Item newItem) {
