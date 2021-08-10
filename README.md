@@ -12,4 +12,11 @@
 -Amazon Web Services
 + RDS (Amazon Relational Database Services)
 
+# Set Up
 
+- In preparation to setup the program you must have an IDE
+  such as IntelliJ or XVisual code installed on your computer
+  to run the back end.
+- You will need to also have Postman installed in order to 
+  test your "dummy data" which is stored in the 
+  BS-POS/src/main/resources/data.sql file.
