@@ -31,4 +31,14 @@ public class ItemService {
         return true;
     }
 
+    //This method need to access the modifiers and get the total sum of
+    // the modifier costs.
+    public Double calculateModifierTotal( Item item){
+        Double modifiersPriceSum = 0.0;
+        return modifiersPriceSum;
+    }
+
+    //May need a method to grab the total cost of a single item to be summed
+    // and added to the check father in the program.
+
 }

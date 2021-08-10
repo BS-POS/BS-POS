@@ -31,4 +31,13 @@ public class CustomerCheckService {
         return true;
     }
 
+    //the calculatedCheckTotalMethod should calculate the total number of the items
+    // and save it to the current checkTotal field.
+    //First we need to make sure the itemCost the method is looking for has already
+    // the modifier cost into consideration.
+    public Double calculateCheckTotal (CustomerCheck customerCheck){
+        Double tabSum = 0.0;
+        return tabSum;
+    }
+
 }

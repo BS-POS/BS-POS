@@ -31,4 +31,7 @@ public class ModifierService {
         modifierRepository.delete(modifier);
         return true;
     }
+
+    //May need a method to access the cost of the modifier to be
+    // summed up farther into the program.
 }
