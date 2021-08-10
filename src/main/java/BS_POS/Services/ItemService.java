@@ -38,4 +38,7 @@ public class ItemService {
         return modifiersPriceSum;
     }
 
+    //May need a method to grab the total cost of a single item to be summed
+    // and added to the check father in the program.
+
 }
